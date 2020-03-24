@@ -30,6 +30,7 @@ namespace PokedexC_sharp
             catch (MySqlException e)
             {
                 throw e;
+
             }
         }
     }
