@@ -57,8 +57,11 @@
             this.mov3 = new System.Windows.Forms.Label();
             this.mov4 = new System.Windows.Forms.Label();
             this.descripcion = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.entrenador = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenpokemon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // fondo
@@ -259,7 +262,6 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Descripcion";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // especie
             // 
@@ -393,11 +395,35 @@
             this.descripcion.TabIndex = 28;
             this.descripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PokedexC_sharp.Properties.Resources.pokeball;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 316);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
+            // entrenador
+            // 
+            this.entrenador.BackColor = System.Drawing.Color.White;
+            this.entrenador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entrenador.Location = new System.Drawing.Point(24, 371);
+            this.entrenador.Name = "entrenador";
+            this.entrenador.Size = new System.Drawing.Size(59, 24);
+            this.entrenador.TabIndex = 30;
+            this.entrenador.Text = "Entrenador";
+            this.entrenador.UseVisualStyleBackColor = false;
+            this.entrenador.Click += new System.EventHandler(this.entrenador_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 430);
+            this.Controls.Add(this.entrenador);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.mov4);
             this.Controls.Add(this.mov3);
@@ -431,6 +457,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.fondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenpokemon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -466,6 +493,8 @@
         private System.Windows.Forms.Label mov3;
         private System.Windows.Forms.Label mov4;
         private System.Windows.Forms.Label descripcion;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button entrenador;
     }
 }
 

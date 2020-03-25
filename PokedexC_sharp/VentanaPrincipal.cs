@@ -15,13 +15,15 @@ namespace PokedexC_sharp
     {
         Conexion miConexion = new Conexion();
         DataTable misPokemons = new DataTable();
+        
         int idactual = 0; //el pokemon que estamos viendo
+
         public VentanaPrincipal()
         {
             InitializeComponent();
         }
         private Image convierteBlobAImagen (byte[] img)
-        {
+        { //convierte la imagen
             MemoryStream ms = new System.IO.MemoryStream(img);
             return (Image.FromStream(ms));
         }
@@ -29,7 +31,7 @@ namespace PokedexC_sharp
         private void izquierda_Click(object sender, EventArgs e)
         {
             idactual--;
-            if (idactual <= 0) { idactual = 0; }
+            if (idactual <= 0) { idactual = 1; }
             misPokemons = miConexion.getPokemonPorId(idactual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             altura.Text = misPokemons.Rows[0]["altura"].ToString();
@@ -72,9 +74,12 @@ namespace PokedexC_sharp
             imagenpokemon.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
 
+        private void entrenador_Click(object sender, EventArgs e)
+        {
+            Entrenador entrenador = new Entrenador();
+            entrenador.Show();
         }
+
     }
 }
