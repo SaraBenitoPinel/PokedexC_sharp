@@ -59,6 +59,8 @@
             this.descripcion = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.entrenador = new System.Windows.Forms.Button();
+            this.buscador = new System.Windows.Forms.TextBox();
+            this.botonbuscador = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenpokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -418,11 +420,31 @@
             this.entrenador.UseVisualStyleBackColor = false;
             this.entrenador.Click += new System.EventHandler(this.entrenador_Click);
             // 
+            // buscador
+            // 
+            this.buscador.Location = new System.Drawing.Point(177, 63);
+            this.buscador.Name = "buscador";
+            this.buscador.Size = new System.Drawing.Size(112, 20);
+            this.buscador.TabIndex = 31;
+            // 
+            // botonbuscador
+            // 
+            this.botonbuscador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonbuscador.Location = new System.Drawing.Point(214, 84);
+            this.botonbuscador.Name = "botonbuscador";
+            this.botonbuscador.Size = new System.Drawing.Size(75, 23);
+            this.botonbuscador.TabIndex = 32;
+            this.botonbuscador.Text = "Buscar";
+            this.botonbuscador.UseVisualStyleBackColor = true;
+            this.botonbuscador.Click += new System.EventHandler(this.botonbuscador_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 430);
+            this.Controls.Add(this.botonbuscador);
+            this.Controls.Add(this.buscador);
             this.Controls.Add(this.entrenador);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.descripcion);
@@ -460,6 +482,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenpokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -496,6 +519,8 @@
         private System.Windows.Forms.Label descripcion;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button entrenador;
+        private System.Windows.Forms.TextBox buscador;
+        private System.Windows.Forms.Button botonbuscador;
     }
 }
 
