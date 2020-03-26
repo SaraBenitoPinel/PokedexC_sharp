@@ -61,6 +61,7 @@
             this.entrenador = new System.Windows.Forms.Button();
             this.buscador = new System.Windows.Forms.TextBox();
             this.botonbuscador = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenpokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -438,11 +439,25 @@
             this.botonbuscador.UseVisualStyleBackColor = true;
             this.botonbuscador.Click += new System.EventHandler(this.botonbuscador_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(89, 309);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 40);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "POKEMONS";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 430);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.botonbuscador);
             this.Controls.Add(this.buscador);
             this.Controls.Add(this.entrenador);
@@ -521,6 +536,7 @@
         private System.Windows.Forms.Button entrenador;
         private System.Windows.Forms.TextBox buscador;
         private System.Windows.Forms.Button botonbuscador;
+        private System.Windows.Forms.Button button1;
     }
 }
 

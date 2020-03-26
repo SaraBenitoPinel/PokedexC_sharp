@@ -11,6 +11,8 @@ namespace PokedexC_sharp
     class Conexion
     {
         public MySqlConnection conexion;
+        private MySqlDataReader resultado;
+
         public Conexion() //Para conectarse a la bbdd que tenengo en la maquina virtual
         {
             conexion = new MySqlConnection("Server = 127.0.0.1; Database = listapokemons; " +
@@ -41,6 +43,23 @@ namespace PokedexC_sharp
                 conexion.Open();
                 MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon " +
                     "where nombre = '" + nombre + "'",conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable pokemons = new DataTable();
+                pokemons.Load(resultado);
+                conexion.Close();
+                return pokemons;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+        public DataTable todos()
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta = new MySqlCommand("SELECT * FROM pokemon", conexion);
                 MySqlDataReader resultado = consulta.ExecuteReader();
                 DataTable pokemons = new DataTable();
                 pokemons.Load(resultado);
