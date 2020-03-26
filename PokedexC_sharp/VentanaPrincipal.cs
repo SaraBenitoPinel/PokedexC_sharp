@@ -111,7 +111,7 @@ namespace PokedexC_sharp
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pokemonsclick(object sender, EventArgs e)
         {
             TodosLosPokemons todoslospokemons = new TodosLosPokemons();
             todoslospokemons.Show();
