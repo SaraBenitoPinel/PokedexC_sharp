@@ -117,6 +117,7 @@
             this.imagenpokemon.Location = new System.Drawing.Point(36, 113);
             this.imagenpokemon.Name = "imagenpokemon";
             this.imagenpokemon.Size = new System.Drawing.Size(240, 185);
+            this.imagenpokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagenpokemon.TabIndex = 4;
             this.imagenpokemon.TabStop = false;
             // 
