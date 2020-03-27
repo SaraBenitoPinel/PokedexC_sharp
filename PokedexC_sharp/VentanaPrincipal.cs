@@ -25,7 +25,7 @@ namespace PokedexC_sharp
         {
             InitializeComponent();
         }
-        private Image convierteBlobAImagen (byte[] img)
+        public Image convierteBlobAImagen (byte[] img)
         { //CONVIERTE LA IMAGEN
             MemoryStream ms = new System.IO.MemoryStream(img);
             return (Image.FromStream(ms));
@@ -116,5 +116,6 @@ namespace PokedexC_sharp
             TodosLosPokemons todoslospokemons = new TodosLosPokemons();
             todoslospokemons.Show();
         }
+
     }
 }

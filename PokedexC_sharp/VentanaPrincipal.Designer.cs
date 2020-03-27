@@ -80,9 +80,9 @@
             // 
             // izquierda
             // 
-            this.izquierda.BackColor = System.Drawing.Color.Yellow;
+            this.izquierda.BackColor = System.Drawing.Color.Black;
             this.izquierda.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.izquierda.ForeColor = System.Drawing.Color.Red;
+            this.izquierda.ForeColor = System.Drawing.Color.Yellow;
             this.izquierda.Location = new System.Drawing.Point(102, 362);
             this.izquierda.Name = "izquierda";
             this.izquierda.Size = new System.Drawing.Size(34, 33);
@@ -93,9 +93,9 @@
             // 
             // derecha
             // 
-            this.derecha.BackColor = System.Drawing.Color.Yellow;
+            this.derecha.BackColor = System.Drawing.Color.Black;
             this.derecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.derecha.ForeColor = System.Drawing.Color.Red;
+            this.derecha.ForeColor = System.Drawing.Color.Yellow;
             this.derecha.Location = new System.Drawing.Point(142, 362);
             this.derecha.Name = "derecha";
             this.derecha.Size = new System.Drawing.Size(34, 33);
@@ -441,7 +441,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(89, 309);
@@ -506,12 +506,8 @@
         private System.Windows.Forms.PictureBox fondo;
         private System.Windows.Forms.Button izquierda;
         private System.Windows.Forms.Button derecha;
-        private System.Windows.Forms.Label nombrePokemon;
-        private System.Windows.Forms.PictureBox imagenpokemon;
         private System.Windows.Forms.Label nombre;
-        private System.Windows.Forms.Label altura;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label habilidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -520,23 +516,27 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label especie;
-        private System.Windows.Forms.Label habitat;
-        private System.Windows.Forms.Label peso;
-        private System.Windows.Forms.Label tipo1;
-        private System.Windows.Forms.Label tipo2;
-        private System.Windows.Forms.Label pre;
-        private System.Windows.Forms.Label pos;
-        private System.Windows.Forms.Label mov1;
-        private System.Windows.Forms.Label mov2;
-        private System.Windows.Forms.Label mov3;
-        private System.Windows.Forms.Label mov4;
-        private System.Windows.Forms.Label descripcion;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button entrenador;
         private System.Windows.Forms.TextBox buscador;
         private System.Windows.Forms.Button botonbuscador;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label nombrePokemon;
+        public System.Windows.Forms.PictureBox imagenpokemon;
+        public System.Windows.Forms.Label altura;
+        public System.Windows.Forms.Label habilidad;
+        public System.Windows.Forms.Label especie;
+        public System.Windows.Forms.Label habitat;
+        public System.Windows.Forms.Label peso;
+        public System.Windows.Forms.Label tipo1;
+        public System.Windows.Forms.Label tipo2;
+        public System.Windows.Forms.Label pre;
+        public System.Windows.Forms.Label pos;
+        public System.Windows.Forms.Label mov1;
+        public System.Windows.Forms.Label mov2;
+        public System.Windows.Forms.Label mov3;
+        public System.Windows.Forms.Label mov4;
+        public System.Windows.Forms.Label descripcion;
     }
 }
 
