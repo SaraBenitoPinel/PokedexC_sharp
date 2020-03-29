@@ -114,7 +114,12 @@ namespace PokedexC_sharp
         private void pokemonsclick(object sender, EventArgs e)
         {
             TodosLosPokemons todoslospokemons = new TodosLosPokemons();
-            todoslospokemons.Show();
+            todoslospokemons.ShowDialog();
+            //MessageBox.Show(todoslospokemons.idSeleccionado.ToString());
+            idactual = todoslospokemons.idSeleccionado;
+            //ponemos que la idactual sea la que se ha seleccionado en el datagridview
+            misPokemons = miConexion.getPokemonPorId(idactual);
+            datosPokemon();
         }
 
     }

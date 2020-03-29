@@ -40,7 +40,7 @@
             this.todos.Name = "todos";
             this.todos.Size = new System.Drawing.Size(649, 413);
             this.todos.TabIndex = 0;
-            this.todos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.todos_CellClick);
+            this.todos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.todos_CellClick);
             // 
             // TodosLosPokemons
             // 
